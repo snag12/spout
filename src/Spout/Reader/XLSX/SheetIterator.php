@@ -75,9 +75,9 @@ class SheetIterator implements IteratorInterface
      * Return the current element
      * @see http://php.net/manual/en/iterator.current.php
      *
-     * @return \Box\Spout\Reader\XLSX\Sheet
+     * @return mixed
      */
-    public function current(): Sheet
+    public function current(): mixed
     {
         return $this->sheets[$this->currentSheetIndex];
     }
@@ -86,9 +86,9 @@ class SheetIterator implements IteratorInterface
      * Return the key of the current element
      * @see http://php.net/manual/en/iterator.key.php
      *
-     * @return int
+     * @return mixed
      */
-    public function key(): int
+    public function key(): mixed
     {
         return $this->currentSheetIndex + 1;
     }
