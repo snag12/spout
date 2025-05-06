@@ -373,9 +373,9 @@ class RowIterator implements IteratorInterface
      * Return the current element, either an empty row or from the buffer.
      * @see http://php.net/manual/en/iterator.current.php
      *
-     * @return Row|null
+     * @return mixed
      */
-    public function current() : ?Row
+    public function current() : mixed
     {
         $rowToBeProcessed = $this->rowBuffer;
 
